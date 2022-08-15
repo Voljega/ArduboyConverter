@@ -1,0 +1,9 @@
+id;label;help
+outputDir;Output directory;Path where your set will be created (arduboy collection will be left untouched)
+selectOutputDir;Select;Select your output directory
+genreSubFolders;Use genre subfolders;Check to use genre subfolders for converted games
+autoUpdate;Auto Update;Auto-update the collection before converting
+verify;Verify;Check that your paths are okay
+save;Save;Save your configuration to file
+proceed;Proceed;Create your set
+confirm;Confirm;Your output dir is {outputDir}#nIts content will be erased.#nIf you don't want to proceed, close this window, or click Cancel

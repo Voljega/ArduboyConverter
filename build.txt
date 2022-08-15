@@ -1,0 +1,10 @@
+If you want to build your own executable on Windows, it's pretty straightforward :
+- Install your Python 3.8 or 3.9 environment
+- Launch python prompt
+- Install pyinstaller with this command : `pip install pyinstaller`
+- Depending on your environment you might need to install `pip install requests`
+- Get latest commits through git (git pull)
+- Copy all `.py` files and the `arduboyicon.ico` file in a work directory
+- Go into the work directory and type : `pyinstaller --icon=arduboyicon.ico --clean -F main.py`
+- Your exe will be generated into a `dist` subDirectory
+- Just copy README.md, arduboyicon.ico, build.txt and conf, and gui directories alongside the main exe and you're good to go
