@@ -223,6 +223,7 @@ class ArduboyGUI:
 
     def postProcess(self):
         self.__handleComponentsState__(False)
+        self.logger.log("All done. You can quit now.")
 
     # Listener for Proceed Button
     def __clickProceed__(self):

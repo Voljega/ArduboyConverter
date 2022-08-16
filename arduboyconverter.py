@@ -52,7 +52,10 @@ class ArduboyConverter:
                 gameIni = list(filter(lambda f: f.lower().endswith('.ini'), gameFiles))
                 if len(gameIni) == 1:
                     self.logger.log("      Parsing game.ini metadata")
-                    metadata = conf.loadConf(os.path.join(collectionDir, genreFolder, gameFolder, gameIni[0]), encoding="ANSI")
+                    try:
+                        metadata = conf.loadConf(os.path.join(collectionDir, genreFolder, gameFolder, gameIni[0]), encoding="ANSI")
+                    except:
+                        metadata = conf.loadConf(os.path.join(collectionDir, genreFolder, gameFolder, gameIni[0]), encoding="cp1252")
                     title = metadata['title'] if 'title' in metadata else None
                     date = metadata['date'] if 'date' in metadata else None
                     developer = metadata['author'] if 'author' in metadata else None
