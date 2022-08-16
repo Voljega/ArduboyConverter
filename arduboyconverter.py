@@ -112,7 +112,7 @@ class ArduboyConverter:
 
         year = date.replace('-', '').replace(':', '').replace('Z', '') if date is not None else ''
         path = './' + genre + '/' + gameFolder + '.hex' if self.useGenreSubFolders else "./" + gameFolder + '.hex'
-        frontPic = './dowloaded_images/' + gameFolder + '.png'
+        frontPic = './downloaded_images/' + gameFolder + '.png'
 
         gameElt = etree.SubElement(root, 'game')
         etree.SubElement(gameElt, 'path').text = path
