@@ -19,7 +19,9 @@ Usage is pretty simple:
 
 ### Linux/MacOS installation and execution :
 - ArduboyConverter requires that python3 is installed (it's developed on 3.8)
-- first install Tkinter for python3 if needed : `sudo apt-get install python3-tk`
+- first install Tkinter for python3 if needed :
+  - Either through your package manager `sudo apt-get install python3-tk`
+  - Or through PIP: `sudo pip3 install tk requests`
 - directly download sources or clone the repo with :
  ```
  sudo apt install git # optional, only if git is not installed
